@@ -10,7 +10,26 @@
     </div>
   </div>
 </template>
+<script>
 
+export default {
+  name:'',
+  data(){
+    return {
+
+    }
+  },
+  created(){
+    this.axios({
+      url: "localhost:8888/test",
+      method: "get",
+      params: {}
+    }).then(res => {
+      console.log(res)
+    })
+  }
+}
+</script>
 <style lang='scss'>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
