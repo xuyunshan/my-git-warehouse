@@ -1,52 +1,50 @@
 <template>
   <div>
     <div class="routers">
-      <div @click="toPage1">toPage1</div>
-      <div @click="toPage2">toPage2</div>
-      <div @click="toPage3">toPage3</div>
+      <div @click="toPage1">百度地图</div>
+      <div @click="toPage2">插槽</div>
+      <div @click="toPage3">G6画图</div>
     </div>
     <router-view></router-view>
   </div>
-    
 </template>
 <script>
 export default {
-  name: "",
+  name: '',
   data() {
     return {
-      myDiagram:{},
+      myDiagram: {},
     };
   },
-  created() {
-  },
-  mounted(){
+  created() {},
+  mounted() {
     var that = this;
   },
-  methods:{
-    toPage1(){
-      this.$router.push('/page1')
+  methods: {
+    toPage1() {
+      this.$router.push('/page1');
     },
-    toPage2(){
-      this.$router.push('/page2')
+    toPage2() {
+      this.$router.push('/page2');
     },
-    toPage3(){
-      this.$router.push('/page3')
+    toPage3() {
+      this.$router.push('/page3');
     },
-  }
-}
+  },
+};
 </script>
-<style lang='scss'>
-.assetsMapField{
+<style lang="scss">
+.assetsMapField {
   width: 100%;
   height: 700px;
 }
-.routers{
+.routers {
   display: flex;
   padding: 10px;
-  div{
+  div {
     width: 100px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       color: #1081fa;
     }
   }
