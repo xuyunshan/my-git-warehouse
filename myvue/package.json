@@ -24,6 +24,7 @@
     "@vue/cli-service": "~4.4.0",
     "axios": "^0.19.2",
     "gojs": "^2.1.21",
+    "jquery": "^3.5.1",
     "vue-jsonp": "^0.1.8",
     "vue-template-compiler": "^2.6.11"
   }
