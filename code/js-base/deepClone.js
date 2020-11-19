@@ -46,3 +46,23 @@ function deepClone(obj = {}) {
   // 返回结果
   return result;
 }
+
+// function deepClone1 (obj){
+//   if(typeof obj !== 'object' || obj == null){
+//     return obj;
+//   }
+
+//   let res;
+//   if(Object.prototype.toString.call(obj).slice(8,-1) == "Object"){
+//     res = {};
+//   }else {
+//     res = [];
+//   }
+//   for(let i in obj){
+//保证i不是原型链的属性
+//     // if(obj.hasOwnProperty(i)){
+//       res[i] = deepClone1(obj[i])
+//     // }
+//   }
+//   return res
+// }

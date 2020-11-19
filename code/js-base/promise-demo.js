@@ -9,6 +9,7 @@ function loadImg(src) {
       reject(err);
     };
     img.src = src;
+    document.documentElement.append(img);
   });
   return p;
 }
