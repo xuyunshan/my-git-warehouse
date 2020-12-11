@@ -30,16 +30,20 @@ class Teacher extends People {
   }
 }
 
-// 实例
-const xialuo = new Student('夏洛', 100);
-console.log(xialuo.name);
-console.log(xialuo.number);
-xialuo.sayHi();
-xialuo.eat();
+// // 实例
+// const xialuo = new Student('夏洛', 100);
+// console.log(xialuo.name);
+// console.log(xialuo.number);
+// xialuo.sayHi();
+// xialuo.eat();
 
-// 实例
-const wanglaoshi = new Teacher('王老师', '语文');
-console.log(wanglaoshi.name);
-console.log(wanglaoshi.major);
-wanglaoshi.teach();
-wanglaoshi.eat();
+// // 实例
+// const wanglaoshi = new Teacher('王老师', '语文');
+// console.log(wanglaoshi.name);
+// console.log(wanglaoshi.major);
+// wanglaoshi.teach();
+// wanglaoshi.eat();
+
+console.log(Student instanceof People); //false
+console.log(Student instanceof Object); //true
+console.log(People instanceof Object); //true
