@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.1",
     "vue": "^2.6.11",
@@ -23,6 +24,7 @@
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
     "axios": "^0.19.2",
+    "element-ui": "^2.14.1",
     "gojs": "^2.1.21",
     "vue-jsonp": "^0.1.8",
     "vue-template-compiler": "^2.6.11"
