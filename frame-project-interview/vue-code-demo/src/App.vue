@@ -7,11 +7,11 @@
     <!-- <ConditionDemo/> -->
     <!-- <EventDemo/> -->
 
-    <!-- <ComponentDemo/> -->
+    <ComponentDemo/>
 
     <!-- <AdvancedUse/> -->
 
-    <CartDemo/>
+    <!-- <CartDemo/> -->
   </div>
 </template>
 
@@ -22,20 +22,20 @@
 // import ConditionDemo from './components/BaseUse/ConditionDemo'
 // import EventDemo from './components/BaseUse/EventDemo'
 
-// import ComponentDemo from './components/ComponentsDemo/index'
+import ComponentDemo from './components/ComponentsDemo/index'
 
 // import AdvancedUse from './components/AdvancedUse/index'
 
-import CartDemo from './components/Cart/index'
+// import CartDemo from './components/Cart/index'
 
 export default {
   name: 'app',
   components: {
     // HelloWorld
     // EventDemo
-    // ComponentDemo
+    ComponentDemo
     // AdvancedUse
-    CartDemo
+    // CartDemo
   }
 }
 </script>

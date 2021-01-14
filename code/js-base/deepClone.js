@@ -77,7 +77,7 @@ function deepClone2(obj) {
     res = {};
   }
   for (let key in obj) {
-    if (Object.hasOwnProperty(key)) {
+    if (obj.hasOwnProperty(key)) {
       res[key] = deepClone2(key);
     } else {
       res[key] = key;
