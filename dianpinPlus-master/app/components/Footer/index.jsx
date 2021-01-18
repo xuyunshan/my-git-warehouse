@@ -11,6 +11,7 @@ class Footer extends Component{
 	  this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
 	}
 	render(){
+		debugger
 		const menu = this.props.app.location;
 		return (
 				<div>

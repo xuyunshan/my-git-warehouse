@@ -37,3 +37,28 @@ input1.addEventListener(
     console.log(input1.value);
   }, 600),
 );
+
+//字符串中出现次数最多的字符和出现次数
+function a(str){
+  if(str.length == 1) {
+    return str; 
+ }
+ let charObj = {}; 
+ for(let i=0;i<str.length;i++) {
+     if(!charObj[str.charAt(i)]) {
+       charObj[str.charAt(i)] = 1; 
+     }
+     else{
+       charObj[str.charAt(i)] += 1; 
+     } 
+ } 
+ let maxChar = '', maxValue = 1;
+ for(var k in charObj) { 
+     if(charObj[k] >= maxValue) { 
+       maxChar = k;
+        maxValue = charObj[k]; 
+     } 
+ }
+ return `maxchar:${maxChar};maxVal:${maxValue}`
+}
+console.log(a('1234567890222'))
