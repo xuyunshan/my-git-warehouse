@@ -19,20 +19,20 @@ export default {
   },
   methods:{
     // 初始化地图
-    initMap:function(){
-          var subwayCityName = '上海';
-          var list= BMapSub.SubwayCitiesList;
-          var subwaycity = null;
-          for (var i = 0; i < list.length; i++) {
-              if (list[i].name === subwayCityName) {
-                  subwaycity = list[i];
-                  break;
-              }
-          }
-          // 获取北京地铁数据-初始化地铁图
-          var subway = new BMapSub.Subway('assetsMapField', subwaycity.citycode);
-          subway.setZoom(0.5);
-    },
+    // initMap:function(){
+    //       var subwayCityName = '上海';
+    //       var list= BMapSub.SubwayCitiesList;
+    //       var subwaycity = null;
+    //       for (var i = 0; i < list.length; i++) {
+    //           if (list[i].name === subwayCityName) {
+    //               subwaycity = list[i];
+    //               break;
+    //           }
+    //       }
+    //       // 获取北京地铁数据-初始化地铁图
+    //       var subway = new BMapSub.Subway('assetsMapField', subwaycity.citycode);
+    //       subway.setZoom(0.5);
+    // },
   }
 }
 </script>

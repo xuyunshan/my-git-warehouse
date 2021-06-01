@@ -5,6 +5,7 @@ import page2 from '../views/page2';
 import page3 from '../views/page3';
 import page4 from '../views/page4';
 import page5 from '../views/page5';
+import page6 from '../views/axios';
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/page5',
     name: 'page5',
     component: page5,
+  },
+  {
+    path: '/page6',
+    name: 'page6',
+    component: page6,
   },
 ];
 

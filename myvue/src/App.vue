@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="routers">
-      <div @click="toPage1">百度地图</div>
+      <!-- <div @click="toPage1">百度地图</div> -->
       <div @click="toPage2">插槽</div>
       <div @click="toPage3">G6画图</div>
       <div @click="toPage4">vuex</div>
       <div @click="toPage5">demo</div>
+      <div @click="toPage6">axios</div>
     </div>
     <router-view></router-view>
   </div>
@@ -24,7 +25,7 @@ export default {
   },
   methods: {
     toPage1() {
-      this.$router.push('/page1');
+      // this.$router.push('/page1');
     },
     toPage2() {
       this.$router.push('/page2');
@@ -37,6 +38,9 @@ export default {
     },
     toPage5() {
       this.$router.push('/page5');
+    },
+    toPage6() {
+      this.$router.push('/page6');
     },
   },
 };
